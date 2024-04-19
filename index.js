@@ -43,3 +43,6 @@ document
         .querySelector('.about__content-details-para')
           .textContent
             .replace('{{years}}', (new Date()).getFullYear() - 1998)
+document
+    .querySelector('#year-footer__dinamic')
+      .innerHTML = (new Date()).getFullYear()

@@ -39,9 +39,10 @@
               <a href="./index.html#about" class="header__link">Sobre </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projetos
-              </a>
+              <a href="./index.html#skills" class="header__link"> Habilidades </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">Projetos</a>
             </li>
             <li class="header__link-wrapper">
               <a href="./index.html#contact" class="header__link"> Contatos </a>
@@ -74,6 +75,10 @@
 
             <li class="header__sm-menu-link">
               <a href="./index.html#projects"> Projetos </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#skills"> Habilidades </a>
             </li>
 
             <li class="header__sm-menu-link">
@@ -196,7 +201,7 @@
           </span>
         </h2>
         <div class="about__content-skills">
-          <h3 class="about__content-skills-title text-right">Hard Skills</h3>
+          <h3 class="about__content-skills-title text-left">Hard Skills</h3>
           <hr class="mb-10" />
           <div class="skills-list heading-sec__mb-sm d-flex justify-center">
             <div class="skills-list__skill">
@@ -246,7 +251,7 @@
               <i class="fa-brands fa-docker mr-5"></i>Docker
             </div>
           </div>
-          <h3 class="about__content-skills-title text-right">Soft Skills</h3>
+          <h3 class="about__content-skills-title text-left">Soft Skills</h3>
           <hr class="mb-10" />
           <div class="skills-list text-justify d-flex justify-center">
             <div class="skills-list__skill">Pensamento analítico e criativo</div>
@@ -263,8 +268,9 @@
         <h2 class="heading heading-sec heading-sec__mb-bg">
           <span class="heading-sec__main">Projetos</span>
           <span class="heading-sec__sub">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
+            Aqui você encontrará uma coleção dos projetos que desenvolvi e nos quais trabalhei ao longo da minha jornada como desenvolvedor.
+            Cada projeto reflete minha paixão pela tecnologia e meu compromisso em criar soluções inovadoras e eficientes.
+            Dê uma olhada nos projetos abaixo e não hesite em entrar em <a href="#contact" class="text-color-primary">contato</a> se tiver alguma pergunta ou estiver interessado em colaborar em futuros projetos!
           </span>
         </h2>
 
@@ -272,24 +278,23 @@
           <div class="projects__row">
             <div class="projects__row-img-cont">
               <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
+                src="./assets/projects/sistema1-container.png"
                 alt="Software Screenshot"
                 class="projects__row-img"
                 loading="lazy"
               />
             </div>
             <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 1</h3>
+              <h3 class="projects__row-content-title">Projeto de um sistema de gerencamento CRAS/CREAS</h3>
               <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
+                Sistema desenvolvido para a secretaria da minha cidade, visando o gerenciamento de sistemas
+                de assistências sociais
               </p>
               <a
                 href="./project-1.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
-                >Case Study</a
+                >Ver mais</a
               >
             </div>
           </div>
@@ -299,19 +304,21 @@
     <section id="contact" class="contact sec-pad dynamicBg">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__main heading-sec__main--lt">Contato</span>
           <span class="heading-sec__sub heading-sec__sub--lt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
+            Se você tiver alguma dúvida, sugestão ou estiver interessado em colaborar em um projeto ou contratar meus serviços, não hesite em entrar em contato comigo.
+            Estou sempre aberto a novas oportunidades e adoraria ouvir de você!
+            Você pode me contatar através do formulário abaixo ou através das minhas redes sociais. Prometo responder o mais breve possível.
+            Estou ansioso para conversar com você e discutir como podemos trabalhar juntos para transformar suas ideias em realidade!
           </span>
         </h2>
         <div class="contact__form-container">
           <form action="#" class="contact__form">
             <div class="contact__form-field">
-              <label class="contact__form-label" for="name">Name</label>
+              <label class="contact__form-label" for="name">Nome</label>
               <input
                 required
-                placeholder="Enter Your Name"
+                placeholder="Insira seu nome"
                 type="text"
                 class="contact__form-input"
                 name="name"
@@ -319,10 +326,10 @@
               />
             </div>
             <div class="contact__form-field">
-              <label class="contact__form-label" for="email">Email</label>
+              <label class="contact__form-label" for="email">E-mail</label>
               <input
                 required
-                placeholder="Enter Your Email"
+                placeholder="Insira seu e-mail"
                 type="text"
                 class="contact__form-input"
                 name="email"
@@ -330,19 +337,19 @@
               />
             </div>
             <div class="contact__form-field">
-              <label class="contact__form-label" for="message">Message</label>
+              <label class="contact__form-label" for="message">Mensagem</label>
               <textarea
                 required
                 cols="30"
                 rows="10"
                 class="contact__form-input"
-                placeholder="Enter Your Message"
+                placeholder="Mensagem"
                 name="message"
                 id="message"
               ></textarea>
             </div>
             <button type="submit" class="btn btn--theme contact__btn">
-              Submit
+              Enviar
             </button>
           </form>
         </div>
@@ -356,56 +363,65 @@
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
+              <a
+                href="https://www.linkedin.com/in/jeferson3/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   class="main-footer__icon"
                   src="./assets/png/linkedin-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a
+                href="https://github.com/jeferson3"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   class="main-footer__icon"
                   src="./assets/png/github-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a
+                href="https://www.instagram.com/jeferson_gomes3/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
+                  src="./assets/png/insta-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a
+                href="https://www.facebook.com/profile.php?id=100032126169867"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
+                  src="./assets/png/facebook.png"
                   alt="icon"
                 />
               </a>
             </div>
           </div>
           <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">John Doe</h4>
+            <h4 class="heading heading-sm text-lt">Jeferson Gomes</h4>
             <p class="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
+              Se você tiver alguma dúvida, sugestão ou estiver interessado em colaborar em um projeto ou contratar meus serviços, não hesite em entrar em contato comigo.
+              Estou sempre aberto a novas oportunidades e adoraria ouvir de você!
             </p>
           </div>
         </div>
 
         <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
         <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+          &copy; Copyright <span id="year-footer__dinamic"></span>. Made by
+          <a rel="noreferrer" target="_blank" href="http://jeferson-dev.com.br/"
             >Jeferson Gomes</a
           >
         </div>
