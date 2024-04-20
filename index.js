@@ -51,10 +51,6 @@ document
       .innerHTML = (new Date()).getFullYear();
 
 window.onload = function () {
-  console.log('iniciado')
-
-  // https://wa.me/5587988363914?text=teste
-
   document.getElementById('form-contact')
       .addEventListener('submit', function (e) {
         e.preventDefault();
