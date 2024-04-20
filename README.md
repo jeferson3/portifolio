@@ -14,7 +14,7 @@ Instalação do projeto com node e npm
 ```bash
   cd portifolio
   npm install
-  node-sass sass/main.scss css/style.css -w
+  npm run dev
 ```
 
 
@@ -22,6 +22,7 @@ Servidor de desenvolvimento
 
 ```bash
    php -S localhost:8080
+   npm run watch
 ```    
 
 ## Deploy
