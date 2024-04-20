@@ -125,6 +125,10 @@
   &__content-image {
     text-align: left;
     transform: scaleX(-1);
+    @include respond(phone) {
+      display: none;
+    }
+
   }
 }
 
