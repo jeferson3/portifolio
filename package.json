@@ -4,10 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:scss": "node-sass sass/main.scss css/style.css -w",
+    "create:css":  "[ -f css/style.css ] || touch css/style.css",
+    "compile:scss": "node-sass sass/main.scss css/style.css",
+    "compile-watch:scss": "node-sass sass/main.scss css/style.css -w",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.css",
+    "dev": "npm-run-all create:css compile:scss",
     "compress:css": "node-sass css/style.css css/style.css --output-style compressed",
-    "build": "npm-run-all prefix:css compress:css"
+    "build": "npm-run-all create:css compile:scss prefix:css compress:css",
+    "watch": "npm-run-all create:css compile:scss compile-watch:scss"
   },
   "author": "",
   "devDependencies": {
