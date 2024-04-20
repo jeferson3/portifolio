@@ -10,6 +10,19 @@
     border-radius: $commonBorderRadius;
     font-weight: 600;
     color: #ffffff;
+    &sv{
+      margin-right: 10px;
+    }
+  }
+  &__skill-project {
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+    background: rgba(#999, 0.2);
+    border-radius: $commonBorderRadius;
+    font-weight: 600;
+    color: $themeClrPrimary;
 
     &sv{
       margin-right: 10px;

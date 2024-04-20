@@ -37,12 +37,34 @@ headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
 
-document
-    .querySelector('.about__content-details-para')
+if (document
+    .querySelector('.about__content-details-para')) {
+  document
+      .querySelector('.about__content-details-para')
       .innerHTML = document
-        .querySelector('.about__content-details-para')
-          .textContent
-            .replace('{{years}}', (new Date()).getFullYear() - 1998)
+      .querySelector('.about__content-details-para')
+      .textContent
+      .replace('{{years}}', (new Date()).getFullYear() - 1998)
+}
 document
     .querySelector('#year-footer__dinamic')
-      .innerHTML = (new Date()).getFullYear()
+      .innerHTML = (new Date()).getFullYear();
+
+window.onload = function () {
+  console.log('iniciado')
+
+  // https://wa.me/5587988363914?text=teste
+
+  document.getElementById('form-contact')
+      .addEventListener('submit', function (e) {
+        e.preventDefault();
+        const formData = new FormData(e.target)
+        const {email, name, message} = Object.fromEntries(formData.entries());
+
+        window.open(
+            `https://wa.me/5587988363914?text=${message}. Nome: ${name}. E-mail: ${email}`,
+        'blank'
+        )
+
+      })
+}

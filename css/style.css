@@ -531,7 +531,12 @@ textarea {
     color: #777; }
 
 .project-details__links {
-  margin: 0 0; }
+  margin: 0 0 7rem 0; }
+  .project-details__links__info {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: grey;
+    margin-bottom: 2rem; }
   .project-details__links-btn {
     margin-right: 2rem; }
     @media only screen and (max-width: 37.5em) {
@@ -725,6 +730,17 @@ textarea {
     font-weight: 600;
     color: #ffffff; }
     .skills-list__skillsv {
+      margin-right: 10px; }
+  .skills-list__skill-project {
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+    background: rgba(153, 153, 153, 0.2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #700dcc; }
+    .skills-list__skill-projectsv {
       margin-right: 10px; }
 
 .mouse {
